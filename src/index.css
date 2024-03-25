@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Antonio&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Antonio&family=League+Spartan&display=swap');
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    background-image: url(./images/desktop.png);
+    color: white;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    gap: 950px;
+    padding-inline: 15px;
+    padding-block: 15px;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid grey;
+}
+
+.planet {
+     font-family: "Antonio", sans-serif;
+     font-size: 28px;
+}
+
+.planets {
+    display: flex;
+    gap: 30px;
+    font-family: "League Spartan", sans-serif;
+}
+
+
+.planetDiv {
+    display: flex;
+    justify-content: center;
+    padding-block: 150px;
+    gap: 350px;
+}
+
+.mercury {
+    width: 290px;
+}
+
+.mercury img {
+    width: 290px;
+}
+
+.mercuryContent {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+}
+
+.mercuryContent h1 {
+
+    font-family: "Antonio", sans-serif;
+    font-size: 80px;
+}
+
+.mercuryContent p {
+    line-height: 25px;
+    height: 150px;
+    font-family: "League Spartan", sans-serif;
+}
+
+.source {
+    font-family: "League Spartan", sans-serif;
+    color: grey;
+}
+
+.source a {
+    color: grey;
+    font-weight: 700;
+}
+
+.secondRow {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 230px;
+    right: 475px;
+    width: 350px;
+    justify-content: space-between;
+    padding-bottom: 25px;
+    padding-inline: 15px;
+    gap: 15px;
+}
+
+.secondRow p {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family: "League Spartan", sans-serif;
+    color: white;
+    border: 1px solid grey;
+    height: 48px;
+    cursor: pointer;
+}
+
+.secondRow p:hover {
+    background: #D8D8D8;
+
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding-block: 15px;
+}
+
+.rotationTime, .revolution, .radius, .temp {
+    border: 1px solid grey;
+    width: 255px;
+    height: 128px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 15px;
+}
+
+.rotateText, .revolutionText, .radiusText, .tempText {
+    font-family: "League Spartan", sans-serif;
+    color: grey;
+}
+
+.rotateNumb, .revolutionNumb, .radiusNumb, .tempNumb {
+    font-family: "Antonio", sans-serif;
+    font-size: 40px;
+}
