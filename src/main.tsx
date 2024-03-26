@@ -1,21 +1,20 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App.tsx'
 import './index.css'
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Venus from './Planets/Venus/Venus.tsx';
-import MercuryDesktop from './MercuryDesktop/MercuryDesktop.tsx';
 import Earth from './Planets/Earth/Earth.tsx';
 import Mars from './Planets/Mars/Mars.tsx';
 import Jupiter from './Planets/Jupiter/Jupiter.tsx';
 import Saturn from './Planets/Saturn/Saturn.tsx';
 import Uranus from './Planets/Uranus/Uranus.tsx';
 import Neptune from './Planets/Neptune/Neptune.tsx';
+import App from './App.tsx';
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <MercuryDesktop />,
+    element: <App />,
   },
   {
     path: "/venus",
