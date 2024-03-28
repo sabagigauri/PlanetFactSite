@@ -56,6 +56,7 @@ header {
     display: flex;
     flex-direction: column;
     width: 350px;
+    gap: 15px;
 }
 
 .mercuryContent h1 {
@@ -66,7 +67,6 @@ header {
 
 .mercuryContent p {
     line-height: 25px;
-    height: 150px;
     font-family: "League Spartan", sans-serif;
 }
 
@@ -83,13 +83,7 @@ header {
 .secondRow {
     display: flex;
     flex-direction: column;
-    position: absolute;
-    bottom: 230px;
-    right: 475px;
     width: 350px;
-    justify-content: space-between;
-    padding-bottom: 25px;
-    padding-inline: 15px;
     gap: 15px;
 }
 

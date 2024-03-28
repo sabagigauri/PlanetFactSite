@@ -56,12 +56,11 @@ const Uranus = () => {
             </a>
             <img src={link}></img>
           </p>
-        </div>
-
-        <div className="secondRow">
-          <p>01 OVERVIEW</p>
-          <p>02 STRUCTURE</p>
-          <p>03 SURFACE</p>
+          <div className="secondRow">
+            <p>01 OVERVIEW</p>
+            <p>02 STRUCTURE</p>
+            <p>03 SURFACE</p>
+          </div>
         </div>
       </div>
 

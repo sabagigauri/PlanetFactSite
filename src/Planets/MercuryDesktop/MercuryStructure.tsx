@@ -1,7 +1,7 @@
 import "./MercuryDesktop.css";
-import mercury from "../images/mercuryMiddle.png";
-import link from "../images/link.png";
-import jsonData from "../data.json";
+import mercury from "../../images/mercuryMiddle.png";
+import link from "../../images/link.png";
+import jsonData from "../../data.json";
 import { Link } from "react-router-dom";
 const MercuryDesktop = () => {
   const mercuryData = jsonData[0];
@@ -56,12 +56,11 @@ const MercuryDesktop = () => {
             </a>
             <img src={link}></img>
           </p>
-        </div>
-
-        <div className="secondRow">
-          <p>01 OVERVIEW</p>
-          <p>02 STRUCTURE</p>
-          <p>03 SURFACE</p>
+          <div className="secondRow">
+            <p>01 OVERVIEW</p>
+            <p>02 STRUCTURE</p>
+            <p>03 SURFACE</p>
+          </div>
         </div>
       </div>
 

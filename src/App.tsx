@@ -1,4 +1,4 @@
-import MercuryDesktop from "./MercuryDesktop/MercuryDesktop"
+import MercuryDesktop from "./Planets/MercuryDesktop/MercuryDesktop"
 
 function App() {
 
