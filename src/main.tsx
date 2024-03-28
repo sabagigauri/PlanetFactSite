@@ -10,11 +10,16 @@ import Saturn from './Planets/Saturn/Saturn.tsx';
 import Uranus from './Planets/Uranus/Uranus.tsx';
 import Neptune from './Planets/Neptune/Neptune.tsx';
 import App from './App.tsx';
+import MercuryDesktop from './MercuryDesktop/MercuryStructure.tsx';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
+  },
+  {
+    path: "/mercury-structure",
+    element: <MercuryDesktop />,
   },
   {
     path: "/venus",

@@ -105,8 +105,8 @@ header {
 }
 
 .secondRow p:hover {
-    background: #D8D8D8;
-
+    background: #419EBB;
+    transition: 0.5s;
 }
 
 footer {

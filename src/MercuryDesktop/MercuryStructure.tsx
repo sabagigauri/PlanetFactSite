@@ -1,12 +1,10 @@
 import "./MercuryDesktop.css";
-import mercury from "../images/mercury.png";
+import mercury from "../images/mercuryMiddle.png";
 import link from "../images/link.png";
 import jsonData from "../data.json";
 import { Link } from "react-router-dom";
 const MercuryDesktop = () => {
-
-const mercuryData = jsonData[0];
-
+  const mercuryData = jsonData[0];
 
   return (
     <div className="container">
@@ -50,10 +48,10 @@ const mercuryData = jsonData[0];
 
         <div className="mercuryContent">
           <h1>{mercuryData.name}</h1>
-          <p>{mercuryData.overview.content}</p>
+          <p>{mercuryData.structure.content}</p>
           <p className="source">
             Source :{" "}
-            <a target="_blank" href={mercuryData.overview.source}>
+            <a target="_blank" href={mercuryData.structure.source}>
               Wikipedia
             </a>
             <img src={link}></img>
@@ -62,9 +60,7 @@ const mercuryData = jsonData[0];
 
         <div className="secondRow">
           <p>01 OVERVIEW</p>
-          <p>
-            <Link to="/mercury-structure">02 STRUCTURE</Link>
-          </p>
+          <p>02 STRUCTURE</p>
           <p>03 SURFACE</p>
         </div>
       </div>
@@ -92,6 +88,6 @@ const mercuryData = jsonData[0];
       </footer>
     </div>
   );
-}
+};
 
-export default MercuryDesktop
+export default MercuryDesktop;
