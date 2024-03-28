@@ -129,3 +129,9 @@ footer {
     font-family: "Antonio", sans-serif;
     font-size: 40px;
 }
+
+.LinkP {
+    text-decoration: none;
+    color: #FFFFFF;
+
+}

@@ -1,11 +1,11 @@
-import "./MercuryDesktop.css";
-import mercury from "../../images/mercuryLast.png";
-import link from "../../images/link.png";
+import "./Saturn.css";
 import jsonData from "../../data.json";
 import { Link } from "react-router-dom";
+import saturn from "../../images/saturnLast.png";
+import link from "../../images/link.png";
 
-const MercurySurface = () => {
-  const mercuryData = jsonData[0];
+const SaturnSurface = () => {
+  const saturnData = jsonData[5];
 
   return (
     <div className="container">
@@ -60,32 +60,32 @@ const MercurySurface = () => {
 
       <div className="planetDiv">
         <div className="mercury">
-          <img src={mercury} />
+          <img src={saturn} />
         </div>
 
         <div className="mercuryContent">
-          <h1>{mercuryData.name}</h1>
-          <p>{mercuryData.geology.content}</p>
+          <h1>{saturnData.name}</h1>
+          <p>{saturnData.geology.content}</p>
           <p className="source">
             Source :{" "}
-            <a target="_blank" href={mercuryData.geology.source}>
+            <a target="_blank" href={saturnData.geology.source}>
               Wikipedia
             </a>
             <img src={link}></img>
           </p>
           <div className="secondRow">
             <p>
-              <Link to="/" className="LinkP">
+              <Link to="/saturn" className="LinkP">
                 01 OVERVIEW
               </Link>
             </p>
             <p>
-              <Link to="/mercury-structure" className="LinkP">
+              <Link to="/saturn-structure" className="LinkP">
                 02 STRUCTURE
               </Link>
             </p>
             <p>
-              <Link to="/mercury-surface" className="LinkP">
+              <Link to="/saturn-surface" className="LinkP">
                 03 SURFACE
               </Link>
             </p>
@@ -96,26 +96,26 @@ const MercurySurface = () => {
       <footer>
         <div className="rotationTime">
           <p className="rotateText">ROTATION TIME</p>
-          <p className="rotateNumb">{mercuryData.rotation}</p>
+          <p className="rotateNumb">{saturnData.rotation}</p>
         </div>
 
         <div className="revolution">
           <p className="revolutionText">REVOLUTION TIME</p>
-          <p className="revolutionNumb">{mercuryData.revolution}</p>
+          <p className="revolutionNumb">{saturnData.revolution}</p>
         </div>
 
         <div className="radius">
           <p className="radiusText">RADIUS</p>
-          <p className="radiusNumb">{mercuryData.radius}</p>
+          <p className="radiusNumb">{saturnData.radius}</p>
         </div>
 
         <div className="temp">
           <p className="tempText">AVERAGE TEMP.</p>
-          <p className="tempNumb">{mercuryData.temperature}</p>
+          <p className="tempNumb">{saturnData.temperature}</p>
         </div>
       </footer>
     </div>
   );
 };
 
-export default MercurySurface;
+export default SaturnSurface;

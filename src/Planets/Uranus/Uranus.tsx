@@ -15,28 +15,44 @@ const Uranus = () => {
 
         <div className="planets">
           <p>
-            <Link to="/">MERCURY</Link>
+            <Link to="/" className="LinkP">
+              MERCURY
+            </Link>
           </p>
           <p>
-            <Link to="/venus">VENUS</Link>
+            <Link to="/venus" className="LinkP">
+              VENUS
+            </Link>
           </p>
           <p>
-            <Link to="/earth">EARTH</Link>
+            <Link to="/earth" className="LinkP">
+              EARTH
+            </Link>
           </p>
           <p>
-            <Link to="/mars">MARS</Link>
+            <Link to="/mars" className="LinkP">
+              MARS
+            </Link>
           </p>
           <p>
-            <Link to="/jupiter">JUPITER</Link>
+            <Link to="/jupiter" className="LinkP">
+              JUPITER
+            </Link>
           </p>
           <p>
-            <Link to="/saturn">SATURN</Link>
+            <Link to="/saturn" className="LinkP">
+              SATURN
+            </Link>
           </p>
           <p>
-            <Link to="/uranus">URANUS</Link>
+            <Link to="/uranus" className="LinkP">
+              URANUS
+            </Link>
           </p>
           <p>
-            <Link to="/neptune">NEPTUNE</Link>
+            <Link to="/neptune" className="LinkP">
+              NEPTUNE
+            </Link>
           </p>
         </div>
       </header>
@@ -57,9 +73,21 @@ const Uranus = () => {
             <img src={link}></img>
           </p>
           <div className="secondRow">
-            <p>01 OVERVIEW</p>
-            <p>02 STRUCTURE</p>
-            <p>03 SURFACE</p>
+            <p>
+              <Link to="/uranus" className="LinkP">
+                01 OVERVIEW
+              </Link>
+            </p>
+            <p>
+              <Link to="/uranus-structure" className="LinkP">
+                02 STRUCTURE
+              </Link>
+            </p>
+            <p>
+              <Link to="/uranus-surface" className="LinkP">
+                03 SURFACE
+              </Link>
+            </p>
           </div>
         </div>
       </div>

@@ -1,11 +1,11 @@
-import "./MercuryDesktop.css";
-import mercury from "../../images/mercuryLast.png";
-import link from "../../images/link.png";
-import jsonData from "../../data.json";
 import { Link } from "react-router-dom";
+import "./Earth.css";
+import earth from "../../images/earthMiddle.png";
+import jsonData from "../../data.json";
+import link from "../../images/link.png";
+const EarthStructure = () => {
 
-const MercurySurface = () => {
-  const mercuryData = jsonData[0];
+  const earthData = jsonData[2];
 
   return (
     <div className="container">
@@ -60,32 +60,32 @@ const MercurySurface = () => {
 
       <div className="planetDiv">
         <div className="mercury">
-          <img src={mercury} />
+          <img src={earth} />
         </div>
 
         <div className="mercuryContent">
-          <h1>{mercuryData.name}</h1>
-          <p>{mercuryData.geology.content}</p>
+          <h1>{earthData.name}</h1>
+          <p>{earthData.structure.content}</p>
           <p className="source">
             Source :{" "}
-            <a target="_blank" href={mercuryData.geology.source}>
+            <a target="_blank" href={earthData.structure.source}>
               Wikipedia
             </a>
             <img src={link}></img>
           </p>
           <div className="secondRow">
             <p>
-              <Link to="/" className="LinkP">
+              <Link to="/earth" className="LinkP">
                 01 OVERVIEW
               </Link>
             </p>
             <p>
-              <Link to="/mercury-structure" className="LinkP">
+              <Link to="/earth-structure" className="LinkP">
                 02 STRUCTURE
               </Link>
             </p>
             <p>
-              <Link to="/mercury-surface" className="LinkP">
+              <Link to="/earth-surface" className="LinkP">
                 03 SURFACE
               </Link>
             </p>
@@ -96,26 +96,26 @@ const MercurySurface = () => {
       <footer>
         <div className="rotationTime">
           <p className="rotateText">ROTATION TIME</p>
-          <p className="rotateNumb">{mercuryData.rotation}</p>
+          <p className="rotateNumb">{earthData.rotation}</p>
         </div>
 
         <div className="revolution">
           <p className="revolutionText">REVOLUTION TIME</p>
-          <p className="revolutionNumb">{mercuryData.revolution}</p>
+          <p className="revolutionNumb">{earthData.revolution}</p>
         </div>
 
         <div className="radius">
           <p className="radiusText">RADIUS</p>
-          <p className="radiusNumb">{mercuryData.radius}</p>
+          <p className="radiusNumb">{earthData.radius}</p>
         </div>
 
         <div className="temp">
           <p className="tempText">AVERAGE TEMP.</p>
-          <p className="tempNumb">{mercuryData.temperature}</p>
+          <p className="tempNumb">{earthData.temperature}</p>
         </div>
       </footer>
     </div>
   );
 };
 
-export default MercurySurface;
+export default EarthStructure;
